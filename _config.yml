@@ -1,1 +1,13 @@
+# _config.yml
+title: Meu Site Jekyll
+description: Bem-vindo ao meu site usando GitHub Pages e Jekyll!
+baseurl: "" # Mantém vazio se for um site raiz
+url: "https://username.github.io" # Altere para o seu nome de usuário
+theme: minima # Nome do tema Jekyll que você está utilizando
+
+# Outras configurações opcionais
+markdown: kramdown
+paginate: 5
+plugins:
+  - jekyll-feed
 
