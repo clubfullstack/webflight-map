@@ -84,10 +84,26 @@ header {
     text-align: center;
 }
 
-.ecovila img {
-    max-width: 100%;
+/* Galeria de fotos */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre as imagens */
+    margin-bottom: 40px;
 }
 
+.gallery img {
+    width: 30%; /* Para garantir que 3 imagens caibam lado a lado */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Relatos */
 .relatos video {
     width: 30%;
     margin: 10px;
