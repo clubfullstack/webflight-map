@@ -117,10 +117,42 @@ header {
     text-align: center;
 }
 
-/* Bloco 6 - Instrutores */
+/* Bloco 6 - Conheça Nossos Instrutores */
 .instrutores {
     padding: 60px 20px;
     text-align: center;
+}
+
+.instrutores p {
+    margin-bottom: 40px;
+}
+
+/* Galeria dos Instrutores */
+.instrutores-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os boxes */
+}
+
+.instrutor {
+    width: 30%;
+    text-align: center;
+}
+
+.instrutor img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.instrutor img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.instrutor p {
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 /* Bloco 7 - Formulário */
