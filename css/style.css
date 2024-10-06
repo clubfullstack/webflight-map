@@ -127,30 +127,40 @@ header {
     margin-bottom: 40px;
 }
 
-/* Galeria dos Instrutores */
-.instrutores-gallery {
+/* Quadro de três frames */
+.quadro-instrutores {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espaço entre os boxes */
+    gap: 0; /* Sem espaçamento entre os frames */
+    border: 5px solid #333; /* Moldura externa do quadro */
+    border-radius: 10px; /* Bordas arredondadas do quadro */
+    overflow: hidden; /* Garante que as imagens não ultrapassem o quadro */
+    width: 80%; /* Tamanho do quadro ajustado à tela */
+    margin: 0 auto;
 }
 
-.instrutor {
-    width: 30%;
-    text-align: center;
+/* Estilo de cada frame dentro do quadro */
+.frame {
+    flex: 1;
+    border-left: 2px solid #333; /* Divisória entre os frames */
 }
 
-.instrutor img {
+.frame:first-child {
+    border-left: none; /* Remove a borda esquerda do primeiro frame */
+}
+
+.frame img {
     width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
+    object-fit: cover; /* Ajusta a imagem para caber perfeitamente dentro do frame */
     transition: transform 0.3s ease;
 }
 
-.instrutor img:hover {
+.frame img:hover {
     transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 
-.instrutor p {
+.frame p {
     margin-top: 10px;
     font-weight: bold;
 }
